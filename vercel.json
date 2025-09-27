@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      {
+        "source": "/reset-password/:token",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
