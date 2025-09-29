@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const chatAxios = axios.create({
-  baseURL: "https://network-next-backend.onrender.com/api/network-next/v1",
+  baseURL: `${import.meta.env.VITE_APP_AXIOS_BASE_URL}`,
   headers: {
     "Content-Type": "application/json",
   },

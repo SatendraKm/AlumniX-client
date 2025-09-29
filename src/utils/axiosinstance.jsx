@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api/network-next/v1",
+  baseURL: `${import.meta.env.VITE_APP_AXIOS_BASE_URL}`,
   headers: {
     "Content-Type": "application/json",
   },

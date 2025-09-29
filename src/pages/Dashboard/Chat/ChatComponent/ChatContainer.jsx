@@ -14,7 +14,7 @@ export default function ChatContainer({ currentChat, socket }) {
     const fetchMessages = async () => {
       try {
         const response = await fetch(
-          "https://network-next-backend.onrender.com/api/network-next/v1/messages/getmsg",
+          `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/messages/getmsg`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -49,7 +49,7 @@ export default function ChatContainer({ currentChat, socket }) {
 
     try {
       await fetch(
-        "https://network-next-backend.onrender.com/api/network-next/v1/messages/addmsg",
+        `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/messages/addmsg`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

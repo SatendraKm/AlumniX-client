@@ -71,13 +71,13 @@ const Donation = () => {
       const {
         data: { key },
       } = await axios.get(
-        "https://network-next-backend.onrender.com/api/network-next/v1/donation/get-key"
+        `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/donation/get-key`
       );
 
       const {
         data: { order },
       } = await axios.post(
-        "https://network-next-backend.onrender.com/api/network-next/v1/donation/checkout",
+        `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/donation/checkout`,
         { amount }
       );
 
@@ -102,7 +102,7 @@ const Donation = () => {
             // Send the response to your backend for verification
             try {
               const response = await axios.post(
-                "https://network-next-backend.onrender.com/api/network-next/v1/funding/payment-verification",
+                `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/funding/payment-verification`,
                 {
                   razorpay_payment_id,
                   razorpay_order_id,
