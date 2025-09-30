@@ -12,7 +12,7 @@
 //   cors: {
 //     origin: [
 //       "https://n-square-backend.onrender.com",
-//       "https://network-next-backend.onrender.com",
+//       `${import.meta.env.VITE_API_HOST_URL}`,
 //       "https://n-square.vercel.app",
 //       "http://localhost:5173",
 //       "http://localhost:3001",

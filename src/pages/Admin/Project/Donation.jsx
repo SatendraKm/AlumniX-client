@@ -18,7 +18,7 @@ const Donation = () => {
   const loadRazorpayScript = () => {
     return new Promise((resolve, reject) => {
       const script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/checkout.js";
+      script.src = `${import.meta.env.VITE_RAZORPAY_CHECKOUT_LINK}`;
       script.onload = () => resolve();
       script.onerror = () =>
         reject(new Error("Failed to load Razorpay script"));
