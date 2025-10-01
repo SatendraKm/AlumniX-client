@@ -21,7 +21,7 @@ const PopularProjectCard = () => {
             title: project.projectTopic,
             projectPhase: project.projectPhase,
             contributors: (project.studentContributors?.length || 0) + (project.mentorContributors?.length || 0),
-            image: project.projectPhoto || "https://via.placeholder.com/150", // Fallback image
+            image: project.projectPhoto || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`, // Fallback image
             totalDonations: project.totalDonations || 0,
             description: project.description,
             department: project.department,

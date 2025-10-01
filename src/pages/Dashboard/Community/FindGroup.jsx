@@ -106,7 +106,7 @@ const FindGroup = () => {
               <div className="flex items-center space-x-4">
                 <img
                   src={
-                    group.groupProfileImage || "https://via.placeholder.com/48"
+                    group.groupProfileImage || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/48`
                   }
                   alt={`${group.name} group`}
                   className="rounded-full w-12 h-12 object-cover"

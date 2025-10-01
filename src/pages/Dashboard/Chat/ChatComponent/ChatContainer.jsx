@@ -92,7 +92,7 @@ export default function ChatContainer({ currentChat, socket }) {
         <div className="flex items-center gap-4">
           <img
             src={
-              currentChat?.profileimageUrl || "https://via.placeholder.com/150"
+              currentChat?.profileimageUrl || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`
             }
             alt="avatar"
             className="h-12 w-12 rounded-full shadow"

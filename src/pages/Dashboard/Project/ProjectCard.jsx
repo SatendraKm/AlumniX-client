@@ -57,7 +57,7 @@ const ProjectCard = ({ project }) => {
         <div className="flex items-center">
           <div>
             <img
-              src={image || "https://via.placeholder.com/150"}
+              src={image || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`}
               alt={`Image for project: ${title || "Project"}`}
               className="h-20 w-32 object-contain rounded-3xl border-2 border-blue-500 shadow-sm"
             />

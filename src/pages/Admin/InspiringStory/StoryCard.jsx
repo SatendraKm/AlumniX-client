@@ -59,7 +59,7 @@ const StoryCard = ({ story, currentUserId, onLike, onDislike }) => {
           </div>
         ) : (
           <img
-            src={storyImage || "https://via.placeholder.com/150"}
+            src={storyImage || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`}
             alt={title}
             className="w-full h-full object-cover hover:scale-105 transition-transform"
           />

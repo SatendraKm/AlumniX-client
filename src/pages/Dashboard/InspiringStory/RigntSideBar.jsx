@@ -30,7 +30,7 @@ const RightSidebar = () => {
           {/* Story Card 1 */}
           <div className="w-32 h-48 bg-white shadow-md rounded-lg overflow-hidden relative">
             <img
-              src="https://via.placeholder.com/150"
+              src={`${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`}
               alt="Story Thumbnail"
               className="w-full h-full object-cover"
             />
@@ -44,7 +44,7 @@ const RightSidebar = () => {
           {/* Story Card 2 */}
           <div className="w-32 h-48 bg-white shadow-md rounded-lg overflow-hidden relative">
             <img
-              src="https://via.placeholder.com/150"
+              src={`${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`}
               alt="Story Thumbnail"
               className="w-full h-full object-cover"
             />

@@ -9,7 +9,7 @@ const VideoStory = ({ videoSrc, thumbnail }) => {
             src={videoSrc}
             className="w-full h-full object-cover"
             controls
-            poster={thumbnail || "https://via.placeholder.com/150"} // Use the thumbnail or a default one
+            poster={thumbnail || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`} // Use the thumbnail or a default one
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-gray-200">

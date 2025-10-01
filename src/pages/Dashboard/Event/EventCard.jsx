@@ -74,7 +74,7 @@ const EventCard = ({ event, currentUserId, onLikeEvent, onDislikeEvent }) => {
       {/* Event Image with Edit Button */}
       <div className="relative rounded-lg overflow-hidden">
         <img
-          src={event.eventphoto || "https://via.placeholder.com/150"}
+          src={event.eventphoto || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`}
           alt={event.title}
           className="w-full h-[180px] object-cover"
         />

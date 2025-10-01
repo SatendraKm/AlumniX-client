@@ -1,4 +1,4 @@
-export const host = "https://n-square.onrender.com";
+export const host = `${import.meta.env.VITE_API_HOST_URL_2}`;
 export const loginRoute = `/users/login`;
 export const registerRoute = `/users/register`;
 export const logoutRoute = `${host}/users/logout`;

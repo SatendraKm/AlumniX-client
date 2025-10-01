@@ -70,7 +70,7 @@ export default function ChatContainer({ currentChat, socket }) {
         <div className="flex items-center gap-4">
           <img
             src={
-              currentChat.groupProfileImage || "https://via.placeholder.com/40"
+              currentChat.groupProfileImage || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/40`
             }
             alt="group-avatar"
             className="w-12 h-12 rounded-full"

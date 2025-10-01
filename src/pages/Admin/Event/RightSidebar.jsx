@@ -91,7 +91,7 @@ const RightSidebar = () => {
               className="grid bg-gradient-to-br from-blue-50 via-gray-50 to-blue-100 grid-cols-[80px_1fr] gap-4 items-center p-1 border rounded-md shadow-sm"
             >
               <img
-                src={event.eventPhoto || "https://via.placeholder.com/80"}
+                src={event.eventPhoto || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/80`}
                 alt={event.title}
                 className="rounded-md w-20 h-20 object-cover"
               />

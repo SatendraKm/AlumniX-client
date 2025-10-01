@@ -74,7 +74,7 @@ const JobCard = ({
       {/* Job Image */}
       <div className="relative rounded-lg overflow-hidden">
         <img
-          src={jobphoto || "https://via.placeholder.com/150"}
+          src={jobphoto || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`}
           alt={title}
           className="w-full h-[180px] object-cover"
         />

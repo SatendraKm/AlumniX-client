@@ -23,7 +23,7 @@ export default function Contacts({ changeChat, currentUser }) {
           const followingData = await Promise.all(
             currentUser.following.map(async (id) => {
               const response = await fetch(
-                `https://n-square.onrender.com/api/network-next/v1/users/${id}`
+                `${import.meta.env.VITE_API_HOST_URL_2}/api/network-next/v1/users/${id}`
               );
               const data = await response.json();
               return data.data; // Extract user data from API response
