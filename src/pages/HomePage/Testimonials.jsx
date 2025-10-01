@@ -9,7 +9,7 @@ const Testimonials = () => {
       review:
         "At Network_Next, we believe that our transformation comes from consistently delivering value through exceptional solutions. Our unique approach has earned us:",
       rating: 4,
-      avatar: "https://via.placeholder.com/50", // Replace with actual avatar URL
+      avatar: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/50`, // Replace with actual avatar URL
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Testimonials = () => {
       review:
         "At Network_Next, we believe that our transformation comes from consistently delivering value through exceptional solutions. Our unique approach has earned us:",
       rating: 4,
-      avatar: "https://via.placeholder.com/50", // Replace with actual avatar URL
+      avatar: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/50`, // Replace with actual avatar URL
     },
   ];
 

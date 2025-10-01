@@ -318,7 +318,7 @@ const ProjectDetail = () => {
                       <img
                         src={
                           donation.user?.profileimageUrl ||
-                          "https://via.placeholder.com/40"
+                          `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/40`
                         }
                         alt={donation.user?.firstName || "User"}
                         className="w-8 h-8 rounded-full mr-3"
@@ -400,7 +400,7 @@ const ProjectDetail = () => {
             <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center">
               <img
                 src={
-                  projectData?.projectPhoto || "https://via.placeholder.com/100"
+                  projectData?.projectPhoto || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/100`
                 }
                 alt="Project Icon"
                 className="w-full h-full rounded-full object-contain"

@@ -30,7 +30,7 @@ export default function Chat() {
 
   useEffect(() => {
     if (currentUser && !socket.current) {
-      socket.current = io("https://network-next-backend.onrender.com", {
+      socket.current = io(`${import.meta.env.VITE_API_HOST_URL}`, {
         transports: ["websocket"],
         reconnectionAttempts: 5,
         reconnectionDelay: 5000,

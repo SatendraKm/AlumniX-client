@@ -52,7 +52,7 @@ export default function Contacts({ contacts, changeChat }) {
                 <img
                   src={
                     contact.groupProfileImage ||
-                    "https://via.placeholder.com/40"
+                    `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/40`
                   }
                   alt="Group"
                   className="w-12 h-12 rounded-full object-cover"
@@ -72,7 +72,7 @@ export default function Contacts({ contacts, changeChat }) {
           {/* Current User Info */}
           <div className="mt-6 p-3 bg-gray-200 rounded-lg flex items-center gap-4 shadow-sm">
             <img
-              src={currentUserImage || "https://via.placeholder.com/40"}
+              src={currentUserImage || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/40`}
               alt="avatar"
               className="w-12 h-12 rounded-full object-cover"
             />

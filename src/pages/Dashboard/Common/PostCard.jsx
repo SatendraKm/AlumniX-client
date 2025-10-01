@@ -89,7 +89,7 @@ const PostCard = ({
       <div className="flex items-start justify-between pt-2">
         <div className="flex items-center">
           <img
-            src={user?.profileimageUrl || "https://via.placeholder.com/40"}
+            src={user?.profileimageUrl || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/40`}
             alt={`${user?.firstName || "User"}'s Avatar`}
             className="rounded-full w-10 h-10"
           />

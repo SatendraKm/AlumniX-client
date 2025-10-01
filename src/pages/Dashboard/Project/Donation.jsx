@@ -18,7 +18,7 @@ const Donation = () => {
   const loadRazorpayScript = () => {
     return new Promise((resolve, reject) => {
       const script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/checkout.js";
+      script.src = `${import.meta.env.VITE_RAZORPAY_CHECKOUT_LINK}`;
       script.onload = () => resolve();
       script.onerror = () =>
         reject(new Error("Failed to load Razorpay script"));
@@ -71,13 +71,13 @@ const Donation = () => {
       const {
         data: { key },
       } = await axios.get(
-        "https://network-next-backend.onrender.com/api/network-next/v1/donation/get-key"
+        `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/donation/get-key`
       );
 
       const {
         data: { order },
       } = await axios.post(
-        "https://network-next-backend.onrender.com/api/network-next/v1/donation/checkout",
+        `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/donation/checkout`,
         { amount }
       );
 
@@ -102,7 +102,7 @@ const Donation = () => {
             // Send the response to your backend for verification
             try {
               const response = await axios.post(
-                "https://network-next-backend.onrender.com/api/network-next/v1/donation/payment-verification",
+                `${import.meta.env.VITE_APP_AXIOS_BASE_URL}/donation/payment-verification`,
                 {
                   razorpay_payment_id,
                   razorpay_order_id,

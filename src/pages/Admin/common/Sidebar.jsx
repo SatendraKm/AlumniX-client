@@ -215,7 +215,7 @@ const Sidebar = () => {
         {/* Virtual Interview Button */}
         {role !== "admin" && (
           <Link
-            to="https://n-sqare-virtual-interview.vercel.app/"
+            to={`${import.meta.env.VITE_VIRTUAL_INTERVIEW_HOST_URL}`}
             className="mx-3 mt-2"
           >
             <button className="w-full py-1 rounded-lg bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-center hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 shadow-lg shadow-blue-400/50 hover:shadow-purple-400/20">

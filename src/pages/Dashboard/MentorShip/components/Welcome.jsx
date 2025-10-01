@@ -6,7 +6,7 @@ export default function Welcome() {
   // useEffect(async () => {
   //   setUserName(
   //     await JSON.parse(
-  //       localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
+  //       localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)  // use "import.meta.env"
   //     ).username
   //   );
   // }, []);

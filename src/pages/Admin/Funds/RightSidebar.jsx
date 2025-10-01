@@ -19,14 +19,14 @@ const RightSidebar = () => {
       id: 1,
       title: "Annual Fundraising Gala",
       description: "Join us for an evening of charity and celebration.",
-      eventPhoto: "https://via.placeholder.com/80",
+      eventPhoto: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/80`,
       tags: ["Charity", "Networking"],
     },
     {
       id: 2,
       title: "Volunteer Drive",
       description: "Help us recruit more volunteers.",
-      eventPhoto: "https://via.placeholder.com/80",
+      eventPhoto: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/80`,
       tags: ["Community", "Volunteering"],
     },
   ];
@@ -38,7 +38,7 @@ const RightSidebar = () => {
       lastName: "Doe",
       role: "Philanthropist",
       tagLine: "Committed to making a difference.",
-      profileImageUrl: "https://via.placeholder.com/50",
+      profileImageUrl: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/50`,
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ const RightSidebar = () => {
       lastName: "Smith",
       role: "Organizer",
       tagLine: "Passionate about charity work.",
-      profileImageUrl: "https://via.placeholder.com/50",
+      profileImageUrl: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/50`,
     },
   ];
 

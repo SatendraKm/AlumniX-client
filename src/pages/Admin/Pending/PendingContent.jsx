@@ -119,7 +119,7 @@ const PendingContent = () => {
             >
               <div className="flex items-center gap-4">
                 <img
-                  src={user.profileimageUrl || "https://via.placeholder.com/50"}
+                  src={user.profileimageUrl || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/50`}
                   alt={`${user.firstName} ${user.lastName}`}
                   className="w-12 h-12 rounded-full object-cover"
                 />

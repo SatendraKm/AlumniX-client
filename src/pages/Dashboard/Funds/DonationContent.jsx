@@ -10,7 +10,7 @@ import Cookies from "js-cookie";
 //     description:
 //       "Supporting students in need through scholarships is our mission. We aim to provide financial assistance to deserving students who excel in academics but lack the necessary resources. Your donation helps build a brighter future for these students..",
 //     goalAmount: 5000,
-//     fundImage: "https://via.placeholder.com/150",
+//     fundImage: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150",
 //   },
 //   {
 //     _id: "2",
@@ -18,7 +18,7 @@ import Cookies from "js-cookie";
 //     description:
 //       "Supporting students in need through scholarships is our mission. We aim to provide financial assistance to deserving students who excel in academics but lack the necessary resources. Your donation helps build a brighter future for these students.",
 //     goalAmount: 10000,
-//     fundImage: "https://via.placeholder.com/150",
+//     fundImage: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150",
 //   },
 //   {
 //     _id: "3",
@@ -26,7 +26,7 @@ import Cookies from "js-cookie";
 //     description:
 //       "Supporting students in need through scholarships is our mission. We aim to provide financial assistance to deserving students who excel in academics but lack the necessary resources. Your donation helps build a brighter future for these students.",
 //     goalAmount: 3000,
-//     fundImage: "https://via.placeholder.com/150",
+//     fundImage: `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150",
 //   },
 // ];
 

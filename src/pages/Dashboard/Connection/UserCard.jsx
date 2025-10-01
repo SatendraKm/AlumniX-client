@@ -4,7 +4,7 @@ const UserCard = ({ user, isFollowing, onFollow, onUnfollow }) => {
       {/* Profile Image and Details */}
       <div className="flex items-center space-x-4">
         <img
-          src={user.profileimageUrl || "https://via.placeholder.com/150"}
+          src={user.profileimageUrl || `${import.meta.env.VITE_VIA_PLACEHOLDER_IMAGE}/150`}
           alt={`${user.firstName} ${user.lastName}`}
           className="w-16 h-16 rounded-full object-cover shadow-sm"
         />
